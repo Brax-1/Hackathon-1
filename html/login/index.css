@@ -1,0 +1,236 @@
+*{
+margin:0;
+padding:0;
+}
+
+#im{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-top: -0.2%;
+    background-color: rgba(0,0,0,0.7);
+    margin-left: -0.2%;
+    z-index: -10;
+} 
+#im1{
+    position: absolute;
+    height: 600px;
+    width: 1200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-style: solid;
+    border-width: 5px;
+    z-index: -3;
+    border-color: rgb(31, 248, 147);
+    box-shadow: 0 0 40px black;
+    
+}
+#blank{
+    position: absolute;
+    width: 36%;
+    height: 608px;
+    z-index: -1;
+    left: 10.5%;
+    top: 10%;
+    background-color: rgb(31, 248, 147);
+}
+#t1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding-top: 208px;
+    padding-bottom: 350px;
+    padding-left: 130px;
+    padding-right: 130px;
+    transform: translate(-110%,-53.5%);
+    font-family: sans-serif;
+    font-weight: 800;
+    color: white;
+    font-size: 34px;
+    background-color:transparent;
+
+}
+#t2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-160%,-200%);
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    font-family: sans-serif;
+
+}
+#t3{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-183%,-100%);
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    font-family: sans-serif;
+
+}
+#log{
+    position: absolute;
+    background: transparent;
+    border-color: white;
+    left: 23%;
+    top: 63%;
+    
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 100px;
+    transition: all 0.4s linear;
+    outline: none;
+}
+#log:hover{
+    box-shadow: 0 0 5px white,0 0 40px white,0 0 70px white;
+    transform: scale(1.1);
+}
+
+
+#t4{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(55%,-500%);
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(31, 248, 147);
+    font-family: sans-serif;
+}
+
+.form{
+    width: 500px;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+
+}
+.form input{
+    width:50%;
+    height: 100%;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.form label{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+
+}
+
+.form label::after{
+    content:'';
+    position:absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid rgb(31, 248, 147);;
+    transform: translate(-100%,0);
+    transition: transform 0.3s ease;
+
+}
+.content-name{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.form input:focus + .label-name .content-name, .form input:valid + .label-name .content-name
+{
+    transform: translateY(-150%);
+    
+}
+
+.form input:focus + .label-name::after
+{
+    transform: translateX(0%);
+    
+}
+#over{
+    position: absolute;
+    left: 65%;
+    top: 37%;
+}
+#nam{
+    position: absolute;
+    left: 57%;
+    top: 40%;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(31, 248, 147);;
+}
+#over1{
+    position: absolute;
+    left: 65%;
+    top: 47%;
+}
+#nam1{
+    position: absolute;
+    left: 57%;
+    top: 50%;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(31, 248, 147);;
+}
+#over2{
+    position: absolute;
+    left: 65%;
+    top: 57%;
+}
+#nam2{
+    position: absolute;
+    left: 57%;
+    top: 60%;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(31, 248, 147);;
+}
+#mes{
+    position: absolute;
+    background: transparent;
+    border:2px solid rgb(31, 248, 147) ;
+    left: 65%;
+    top: 70%;
+    color:  rgb(31, 248, 147);
+    font-weight: 900;
+    font-size: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 100px;
+    transition: 0.4s;
+    outline: none;
+    
+}
+#mes:hover{
+    box-shadow: 0 0 10px grey;
+    
+    transform: scale(1.1);
+}
+

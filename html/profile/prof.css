@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(244, 239, 255);
+}
+.nav{
+    
+    display: flex;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.lnav{
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 70%;
+    display: flex;
+    
+}
+.lnav li{
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    z-index: 2;
+    font-family: sans-serif;
+}
+
+.lnav li a{
+    text-decoration: none;
+    color: grey;
+    
+}
+.lnav li a:hover{
+    color: white;
+}
+
+.logo{
+    display: flex;
+    height: 100%;
+    width: 20%;
+    margin-left: -3%;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo img{
+    width: 30px;
+    height: 30px;
+    border: 3px solid white;
+    border-radius: 100px;
+    
+    
+    
+}
+.logo1{
+    display: flex;
+    margin-left: -6%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7%;
+    margin-top: -3px;
+
+}
+#po{
+    color: white;
+    font-weight: 700;
+}
+.logo1 img{
+    width: 100px;
+    height: 30px;
+}
+.rnav{
+    display: flex;
+    width: 50%;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#search{
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: white;
+    height: 20px;
+    margin-right: 20px;
+    outline: none;
+    padding-left: 7px;
+}
+.btn-sm{
+    color: grey;
+    background: transparent;
+    border: 0px;
+    font-weight: 900;
+    outline: none;
+}
+.btn-sm:hover{
+    color: white;
+    
+}
+
+#back{
+    width: 100%;
+    z-index: -1;
+}
+.bla1{
+    position: relative;
+    width: 93.6%;
+    background-color: rgb(226, 223, 223);
+    padding: 50px;
+    background-size: 100%;
+    
+    z-index: -1;
+    
+    
+}
+#pimg{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: url("../../img/ok.png");
+    box-shadow: 0 0 20px black;
+    left: 8%;
+    
+    top: 15%;
+    background-size: 100% 100%;
+    transition: all 0.4s linear;
+
+}
+
+#pimg:hover{
+    transform: scale(0.98);
+    box-shadow: 0 0 0px white;
+    box-shadow: 0 0 10px black;
+    
+}
+
+#back{
+    position: relative;
+    z-index: -4;
+}
+#divider{
+    position: absolute;
+    width: 0.4%;
+    top: 14%;
+    height: 200%;
+    background-color: black;
+    left: 30%;
+}
+#uname{
+    position: absolute;
+    background-color: transparent;
+    font-size: 30px;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 800;
+    top: 16%;
+    left: 60%;
+}
